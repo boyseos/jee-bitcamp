@@ -12,12 +12,10 @@
 	<div>
 		<h2>통장개설</h2>
 
-	<form id = "join_form" action="<%=request.getContextPath()%>/member.do">
+	<form id = "join_form" action="<%=request.getContextPath()%>/member.do?action=join">
 		아이디 <input type="text" 	name="id"/> <br/>
 		비밀번호<input type="text" 	name="pass"/> <br/>
 		이름<input type="text" 		name="name"/> <br/>
-		주민번호<input type="text"	name="ssn"/> <br/>
-		신용등급<input type="text"	name="credit"/> <br/>
 		<input type="submit" id="btn" value="전송"/>
 		<%
 		int i = 0;

@@ -12,17 +12,15 @@
 	<div>
 		<h2>통장개설</h2>
 
-	<form id = "account_form" action="<%=request.getContextPath()%>/account.do">
+	<form id = "account_form" action="<%=request.getContextPath()%>/member.do">
 		아이디 <input type="text" 	name="id"/> <br/>
 		비밀번호<input type="text" 	name="pass"/> <br/>
 		이름<input type="text" 		name="name"/> <br/>
 		주민번호<input type="text"	name="ssn"/> <br/>
 		신용등급<input type="text"	name="credit"/> <br/>
+		<input type="hidden" name="action" value="join" />
+		<input type="hidden" name="dest" value="login" />
 		<input type="submit" id="btn" value="전송"/>
-		<%
-		int i = 0;
-		System.out.println(i+"");
-		i++;%>
 	</form>	
 </div>
 <script>
